@@ -13,7 +13,6 @@ function toWeirdCase(string) {
 }
 
 function tea42(input) {
-  // your code
   let array = input.toString().split("");
   for (let i = 0; i < array.length; i++) {
     if (array[i] === "2") {
@@ -21,4 +20,8 @@ function tea42(input) {
     }
   }
   return array.join("");
+}
+// the regex solution is way simpler:
+function tea42(input) {
+  return input.toString().replace(/2/g, "t");
 }
