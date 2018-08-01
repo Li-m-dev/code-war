@@ -11,3 +11,14 @@ function toWeirdCase(string) {
     })
     .join(" ");
 }
+
+function tea42(input) {
+  // your code
+  let array = input.toString().split("");
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "2") {
+      array[i] = "t";
+    }
+  }
+  return array.join("");
+}
